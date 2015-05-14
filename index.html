@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>User-moderated commenting system</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script  type="text/javascript" src="formcheck.js"></script>
+<LINK rel=stylesheet type=text/css href="index.css">
+</head>
+<body>
+<div id="divBody">
+<!--This is my first assignment of CSC309-->
+<!--Form required for this assignment,which is composed of a table with 2 rows, a textarea and a input lable-->
+<form  action="/upload" method="post"  onSubmit="javascript:return formcheck(this);">
+<table width="50%" border="0" cellspacing="1"  bgcolor="#999999">
+<tr  bgcolor="#FFFFFF">
+<td colspan="2">Required fields are marked <label style="color:#FF0000">*</label></td> 
+</tr>
+<tr bgcolor="#FFFFFF">
+<td>Topic</td>
+<td><textarea name="topic" cols="40" rows="4"></textarea>
+  <span style="color:#FF0000">* no more than 140 characters </span></td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td>Links</td>
+<td><input name="link"  value="http://"/><label style="color:#FF0000">*</label></td>
+</tr>
+<tr  bgcolor="#FFFFFF">
+<td colspan="2"><input type="hidden" name="type" value="topic"/><input type="submit"  value="Post Topic"/><input type="reset"  value="Reset"/></td> 
+</tr>
+</table></form>
+</div>
+</body>
+</html>
